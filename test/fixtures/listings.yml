@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  short_description: MyString
+  long_description: MyString
+  bedroom_count: 1
+  bathroom_count: 1
+  price: 
+  website: MyString
+  name: MyString
+  deposit: 
+  square_feet: 1
+  year_built: 1
+  pet_policy: false
+
+two:
+  short_description: MyString
+  long_description: MyString
+  bedroom_count: 1
+  bathroom_count: 1
+  price: 
+  website: MyString
+  name: MyString
+  deposit: 
+  square_feet: 1
+  year_built: 1
+  pet_policy: false

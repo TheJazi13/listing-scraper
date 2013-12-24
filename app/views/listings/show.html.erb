@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Short description:</strong>
+  <%= @listing.short_description %>
+</p>
+
+<p>
+  <strong>Long description:</strong>
+  <%= @listing.long_description %>
+</p>
+
+<p>
+  <strong>Bedroom count:</strong>
+  <%= @listing.bedroom_count %>
+</p>
+
+<p>
+  <strong>Bathroom count:</strong>
+  <%= @listing.bathroom_count %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @listing.price %>
+</p>
+
+<p>
+  <strong>Website:</strong>
+  <%= @listing.website %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @listing.name %>
+</p>
+
+<p>
+  <strong>Deposit:</strong>
+  <%= @listing.deposit %>
+</p>
+
+<p>
+  <strong>Square feet:</strong>
+  <%= @listing.square_feet %>
+</p>
+
+<p>
+  <strong>Year built:</strong>
+  <%= @listing.year_built %>
+</p>
+
+<p>
+  <strong>Pet policy:</strong>
+  <%= @listing.pet_policy %>
+</p>
+
+<%= link_to 'Edit', edit_listing_path(@listing) %> |
+<%= link_to 'Back', listings_path %>

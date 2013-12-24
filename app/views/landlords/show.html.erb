@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @landlord.company_id %>
+</p>
+
+<p>
+  <strong>Website:</strong>
+  <%= @landlord.website %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @landlord.name %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @landlord.address %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @landlord.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @landlord.state %>
+</p>
+
+<p>
+  <strong>Postal code:</strong>
+  <%= @landlord.postal_code %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @landlord.country %>
+</p>
+
+<%= link_to 'Edit', edit_landlord_path(@landlord) %> |
+<%= link_to 'Back', landlords_path %>

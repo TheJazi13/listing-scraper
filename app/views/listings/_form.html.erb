@@ -1,0 +1,61 @@
+<%= form_for(@listing) do |f| %>
+  <% if @listing.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@listing.errors.count, "error") %> prohibited this listing from being saved:</h2>
+
+      <ul>
+      <% @listing.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :short_description %><br>
+    <%= f.text_field :short_description %>
+  </div>
+  <div class="field">
+    <%= f.label :long_description %><br>
+    <%= f.text_field :long_description %>
+  </div>
+  <div class="field">
+    <%= f.label :bedroom_count %><br>
+    <%= f.number_field :bedroom_count %>
+  </div>
+  <div class="field">
+    <%= f.label :bathroom_count %><br>
+    <%= f.number_field :bathroom_count %>
+  </div>
+  <div class="field">
+    <%= f.label :price %><br>
+    <%= f.text_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :website %><br>
+    <%= f.text_field :website %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :deposit %><br>
+    <%= f.text_field :deposit %>
+  </div>
+  <div class="field">
+    <%= f.label :square_feet %><br>
+    <%= f.number_field :square_feet %>
+  </div>
+  <div class="field">
+    <%= f.label :year_built %><br>
+    <%= f.number_field :year_built %>
+  </div>
+  <div class="field">
+    <%= f.label :pet_policy %><br>
+    <%= f.check_box :pet_policy %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
